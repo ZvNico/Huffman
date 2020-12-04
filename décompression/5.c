@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "5.h"
 
 void decodage(Node* Huffman)
 {
