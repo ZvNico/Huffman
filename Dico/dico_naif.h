@@ -2,7 +2,7 @@
  * \file   dico.h
  * \brief  creation of the dictionary
  * 
- * \author Maxime LAZE : maxime.laze@efrei.net
+ * \author Maxime LAZE : maxime.laze@efrie.net
  * \date   December 2020
  *********************************************************************/
 #ifndef HUFFMAN_2_3_H
@@ -28,7 +28,7 @@ int nombre_element_arbre(Noeud *arbre);
 void parcourir_arbre_dico(FILE *fichier, Noeud *arbre, int *chemin, int n);
 
 /**
- * \brief write in a text file the dictionary.
+ * \brief write in a txt file the dictionary.
  * \param fichier corresponds to the file open berfore.
  * \param caractere the caractere to put in the dictionary.
  * \param code_binaire hte binary code associated to the caractere.
