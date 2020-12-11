@@ -14,6 +14,6 @@
  * \param a pointer to the char with the name of the file where we will calculate the size.
  * \return an int which is the number of characters in the text file.
  */
-int taille_fichier(char *);
+int taille_fichier(char *nom);
 
 #endif //HUFFMAN_1_H
