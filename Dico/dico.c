@@ -17,7 +17,7 @@ void parcourir_arbre_dico(FILE *fichier, Noeud *arbre, int *chemin, int n) {
     }
     n += 1;
     if ((arbre->gauche == NULL) && (arbre->droite == NULL)) {
-        ecrire_ligne_dico(fichier, arbre->caractere, chemin, n + 1);
+        ecrire_ligne_dico(fichier, arbre->caractere, chemin, n);
         return;
     }
     chemin[n] = 0;
