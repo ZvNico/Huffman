@@ -1,8 +1,8 @@
 /*****************************************************************//**
- * \file   arbre de huffman optimisé.h
+ * \file   arbre de huffman optimisÃ©.h
  * \brief  this is the future header for the optimisation of the Huffman tree
  * 
- * \author Maxime LAZE : maxime.laze@efrie.net
+ * \author Maxime LAZE : maxime.laze@efrei.net
  * \date   December 2020
  *********************************************************************/
 #ifndef HUFFMAN_2_H
