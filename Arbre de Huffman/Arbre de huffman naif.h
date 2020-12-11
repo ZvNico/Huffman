@@ -8,7 +8,6 @@
 #ifndef HUFFMAN_2_2_H
 #define HUFFMAN_2_2_H
 
-#include "../../sdd.h"
 /**
  * \brief Function that releases memory.
  * \param l a pointer to the Element. 
