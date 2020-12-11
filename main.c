@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-#include "headers/2/1.h"
-#include "headers/2/2.h"
-#include "sdd.h"
+#include "Occurrences/occurrences_naif.h
+#include "Arbre de Huffman/Arbre de huffman naif.h"
+#include "sdd/sdd.h"
 
 int main() {
     char *nom_fichier;
