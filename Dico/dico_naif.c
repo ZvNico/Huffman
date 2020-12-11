@@ -1,14 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "../../sdd.h"
-#include "../../headers/2/3.h"
+#include "../sdd/sdd.h"
 
 int nombre_element_arbre(Noeud *arbre) {
     if (arbre == NULL) {
         return 0;
     }
     return (1 + nombre_element_arbre(arbre->gauche) + nombre_element_arbre(arbre->droite));
+}
+
+void ecrire_ligne_dico(FILE *fichier, char caractere, int *code_binaire, int n) {
+    fputc(caractere, fichier);
+    fputc(':', fichier);
+    for (int i = 0; i < n; i++) {
+        fprintf(fichier, "%d", code_binaire[i]);
+    }
+    fputc('\n', fichier);
 }
 
 void parcourir_arbre_dico(FILE *fichier, Noeud *arbre, int *chemin, int n) {
@@ -24,15 +32,6 @@ void parcourir_arbre_dico(FILE *fichier, Noeud *arbre, int *chemin, int n) {
     parcourir_arbre_dico(fichier, arbre->gauche, chemin, n);
     chemin[n] = 1;
     parcourir_arbre_dico(fichier, arbre->droite, chemin, n);
-}
-
-void ecrire_ligne_dico(FILE *fichier, char caractere, int *code_binaire, int n) {
-    fputc(caractere, fichier);
-    fputc(':', fichier);
-    for (int i = 0; i < n; i++) {
-        fprintf(fichier, "%d", code_binaire[i]);
-    }
-    fputc('\n', fichier);
 }
 
 void ecrire_dico(Noeud *arbre) {
