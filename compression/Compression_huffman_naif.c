@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "../../headers/1/b.h"
+#include "../Lettretobit/Header/taille_fichier.h"
 
 
 void encodage(char *nom_fichier) {
