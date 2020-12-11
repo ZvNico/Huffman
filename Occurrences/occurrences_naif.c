@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "../../sdd.h"
+#include "../sdd/sdd.h"
 
 void ajouter_element(Element **liste, char carac) {
     Element *nouv;
