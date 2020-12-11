@@ -8,8 +8,6 @@
 #ifndef HUFFMAN_2_1_H
 #define HUFFMAN_2_1_H
 
-#include "../../sdd.h"
-
 /**
  * \brief Function that adds the character to the list and if the list is null, the function returns the element.
  * \param double pointer to the liste to query.
