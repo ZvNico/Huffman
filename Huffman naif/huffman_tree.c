@@ -34,8 +34,8 @@ Noeud *assemblage_noeuds(Noeud *n1, Noeud *n2) {
     Noeud *noeud = (Noeud *) malloc(sizeof(Noeud));
     noeud->occur = n1->occur + n2->occur;
     noeud->caractere = EOF;
-    noeud->droite = n1;
-    noeud->gauche = n2;
+    noeud->gauche = n1;
+    noeud->droite = n2;
     return noeud;
 }
 
@@ -51,6 +51,13 @@ Noeud *creer_noeud(int n, char c) {
 void push(lNoeud **ln, int n, char c) {
     lNoeud *lnoeud = (lNoeud *) malloc(sizeof(lNoeud));
     Noeud *noeud = creer_noeud(n, c);
+    lnoeud->valeur = noeud;
+    lnoeud->suivant = *ln;
+    *ln = lnoeud;
+}
+
+void push_noeud(lNoeud **ln, Noeud *noeud) {
+    lNoeud *lnoeud = (lNoeud *) malloc(sizeof(lNoeud));
     lnoeud->valeur = noeud;
     lnoeud->suivant = *ln;
     *ln = lnoeud;
@@ -74,15 +81,14 @@ Noeud *arbre_huffman(Element *l) {
     while ((temp != NULL) && (temp->suivant != NULL)) {
         n1 = pop_min(&temp);
         n2 = pop_min(&temp);
-        huff = assemblage_noeuds(n1, n2);
-    }
-    if (temp) {
-        n1 = pop_min(&temp);
-        if (huff->occur > n1->occur) {
-            huff = assemblage_noeuds(n1, huff);
+        if ((n1->caractere == EOF) && (n2->caractere == EOF)) {
+            huff = assemblage_noeuds(n1, n2);
+        } else if (n2->caractere == EOF) {
+            huff = assemblage_noeuds(n1, n2);
         } else {
-            huff = assemblage_noeuds(huff, n1);
+            huff = assemblage_noeuds(n2, n1);
         }
+        push_noeud(&temp, huff);
     }
     return huff;
 }
