@@ -8,7 +8,6 @@
 #ifndef HUFFMAN_2_H
 #define HUFFMAN_2_H
 
-#include "../../sdd.h"
 /**
  * \brief adds an occurence to an array of nodes if the character has already been found, or adds the node of the character otherwise.
  * \param noeuds is a triple pointeur on Noeud.
