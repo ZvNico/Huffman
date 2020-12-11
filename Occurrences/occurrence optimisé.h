@@ -2,7 +2,7 @@
  * \file   occurence optimisé.h
  * \brief  adds an occurence to an array of nodes if the character has already been found, or adds the node of the character otherwise.
  * 
- * \author Maxime LAZE : maxime.laze@efrie.net
+ * \author Maxime LAZE : maxime.laze@efrei.net
  * \date   December 2020
  *********************************************************************/
 #ifndef HUFFMAN_3_1_H
