@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-#include "../../headers/1/b.h"
+#include "../Header/taille_fichier.h"
 
 int *convert_ascii_8bit(int ascii) {
     int cpt = 7;
