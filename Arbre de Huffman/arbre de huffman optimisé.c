@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../../sdd.h"
-#include "../../headers/2/2.h"
+#include "../sdd/sdd.h"
 
 void tri_insertion(Noeud ***noeuds, int n) {
     int i, j;
