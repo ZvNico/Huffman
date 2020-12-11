@@ -37,11 +37,11 @@ int incrementer_occurence(Element *liste, char carac) {
     return boolean;
 }
 
-void occurences() {
+Element *occurences(char *nom_fichier) {
     FILE *fichier;
     char caract;
     Element *liste = NULL;
-    fichier = fopen("Alice.txt", "r+");
+    fichier = fopen(nom_fichier, "r+");
     caract = (char) fgetc(fichier);
     while (caract != EOF) {
         if (incrementer_occurence(liste, caract) == 0) {
@@ -49,5 +49,5 @@ void occurences() {
         }
         caract = (char) fgetc(fichier);
     }
-    afficher_liste(liste);
+    return liste;
 }
