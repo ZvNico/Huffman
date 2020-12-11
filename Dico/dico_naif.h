@@ -8,9 +8,6 @@
 #ifndef HUFFMAN_2_3_H
 #define HUFFMAN_2_3_H
 
-#include <stdio.h>
-
-#include "../../sdd.h"
 /**
  * \brief gives the number of elements contained in a Node.
  * \param arbre is the Huffman tree which will be analyzed.
