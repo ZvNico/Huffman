@@ -1,5 +1,5 @@
 /*****************************************************************//**
- * \file   occurence optimisé.h
+ * \file   occurence optimisÃ©.h
  * \brief  adds an occurence to an array of nodes if the character has already been found, or adds the node of the character otherwise.
  * 
  * \author Maxime LAZE : maxime.laze@efrie.net
