@@ -1,12 +1,17 @@
-#ifndef 4_H_INCLUDED
-#define 4_H_INCLUDED
+/*****************************************************************//**
+ * \file   4.h
+ * \brief  write in an output texte file the compressed file in binary.
+ * 
+ * \author Maxime LAZE : maxime.laze@efrei.net
+ * \date   December 2020
+ *********************************************************************/
+#ifndef HUFFMAN_4_H
+#define HUFFMAN_4_H
 
-#include "../../sdd.h"
-#include "../../headers/2/3.h"
+/**
+ * \brief write in the file the compressed file using the binary codes.
+ * \param nom_fichier is the text that we want to compress.
+ */
+void encodage(char *nom_fichier);
 
-int nombre_element_arbre(Noeud *arbre);
-void parcourir_arbre_dico(FILE *fichier, Noeud *arbre, int *chemin, int n);
-void ecrire_ligne_dico(FILE *fichier, char caractere, int *code_binaire, int n);
-void ecrire_dico(Noeud *arbre);
-
-#endif // 4_H_INCLUDED
+#endif //HUFFMAN_4_H
