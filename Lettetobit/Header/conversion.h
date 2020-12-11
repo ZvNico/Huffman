@@ -13,7 +13,7 @@
  * \param int The integer to convert on 8 bits.
  * \return \c returns an array of 8 integers between 0 and 1.
  */
-int *convert_ascii_8bit(int);
+int *convert_ascii_8bit(int ascii);
 
 /**
  * \brief Function that writes the received 8-bit array into the text file.
