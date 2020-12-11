@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "../../headers/1/b.h"
-#include "../../sdd.h"
+#include "../Lettetobit/Header/taille_fichier.h"
+#include "../sdd/sdd.h"
 
 char get_carac(Noeud *arbre, char *texte, int *curseur) {
     if (arbre->caractere != EOF) {
