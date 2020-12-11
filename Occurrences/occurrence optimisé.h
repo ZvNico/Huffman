@@ -8,8 +8,6 @@
 #ifndef HUFFMAN_3_1_H
 #define HUFFMAN_3_1_H
 
-#include "../../sdd.h"
-
 /**
  * \brief do the dichotomique research.
  * \param noeuds is a double pointeur on Noeud.
