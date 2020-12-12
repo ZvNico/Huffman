@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "../Lettretobit/Header/taille_fichier.h"
-
+#include "../Lettertobit/Header/file_size.h"
 
 void encodage(char *nom_fichier) {
     char *texte = NULL, *texte_dico = NULL;

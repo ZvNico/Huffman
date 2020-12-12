@@ -5,15 +5,15 @@
  * \author josephxu joseph.xu@efrei.net
  * \date   December 2020
  *********************************************************************/
-#ifndef 5_H_INCLUDED
-#define 5_H_INCLUDED
+#ifndef HUFFMAN_5_H_INCLUDED
+#define HUFFMAN_5_H_INCLUDED
 
 /**
  * \brief Function that scans the tree and writes in the text file corresponds to each binary suite.
  * \param a pointer to the arbre to browse and find the corresponding character.
  */
 
-void decodage(Noeud* arbre);
+void decodage(Noeud *arbre);
 
 /**
  * \brief Function that reads a binary suite and finds the character while browsing the tree.
@@ -23,5 +23,6 @@ void decodage(Noeud* arbre);
  * \return, returns the character corresponding to the binary suite.
  */
 
-char get_carac(Noeud* arbre, char* texte, int* curseur);
-#endif // 5_H_INCLUDED
+char get_carac(Noeud *arbre, char *texte, int *curseur);
+
+#endif // HUFFMAN_5_H_INCLUDED

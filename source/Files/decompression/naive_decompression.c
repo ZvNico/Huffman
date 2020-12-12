@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "../Lettetobit/Header/taille_fichier.h"
+#include "../Lettertobit/Header/file_size.h"
 #include "../sdd/sdd.h"
 
 char get_carac(Noeud *arbre, char *texte, int *curseur) {

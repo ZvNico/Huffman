@@ -1,8 +1,11 @@
 #include <stdio.h>
 
-#include "Occurrences/occurrences_naif.h
-#include "Arbre de Huffman/Arbre de huffman naif.h"
-#include "sdd/sdd.h"
+#include "Files/Occurrences/naive_occurrences.h"
+#include "Files/Huffman_tree/Huffman_naive_tree.h"
+#include "Files/sdd/sdd.h"
+#include "Files/Dictionary/naive_dictionary.h"
+#include "Files/compression/naive_compression.h"
+#include "Files/decompression/naive_decompression.h"
 
 int main() {
     char *nom_fichier;
@@ -15,7 +18,7 @@ int main() {
         scanf("%s", nom_fichier);
         if ((nom_fichier[0] != 'Q') && ((nom_fichier[1]) != '\0')) {
             fichier = fopen(nom_fichier, "r");
-            if ( fichier != NULL) {
+            if (fichier != NULL) {
                 fclose(fichier);
                 Element *test = occurences(nom_fichier);
                 Noeud *huffman = arbre_huffman(test);
