@@ -1,0 +1,96 @@
+\hypertarget{sdd_8h}{}\doxysection{sdd/sdd.h File Reference}
+\label{sdd_8h}\index{sdd/sdd.h@{sdd/sdd.h}}
+
+
+file that contains the corresponding data structures and display functions.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_element}{Element}}
+\item 
+struct \mbox{\hyperlink{structl_noeud}{l\+Noeud}}
+\item 
+struct \mbox{\hyperlink{struct_noeud}{Noeud}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{sdd_8h_aed98d73ee26a4beb54eaea48f35f8694}\label{sdd_8h_aed98d73ee26a4beb54eaea48f35f8694}} 
+typedef struct \mbox{\hyperlink{struct_element}{Element}} \mbox{\hyperlink{sdd_8h_aed98d73ee26a4beb54eaea48f35f8694}{Element}}
+\begin{DoxyCompactList}\small\item\em a list of character and her corresponding occurrences. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{sdd_8h_a4e83fb7bbed31bbc0bc2d6a436461650}\label{sdd_8h_a4e83fb7bbed31bbc0bc2d6a436461650}} 
+typedef struct \mbox{\hyperlink{structl_noeud}{l\+Noeud}} \mbox{\hyperlink{sdd_8h_a4e83fb7bbed31bbc0bc2d6a436461650}{l\+Noeud}}
+\begin{DoxyCompactList}\small\item\em a list of \mbox{\hyperlink{struct_noeud}{Noeud}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{sdd_8h_ae80d9eb3aee3753b2d5a24b616349e35}\label{sdd_8h_ae80d9eb3aee3753b2d5a24b616349e35}} 
+typedef struct \mbox{\hyperlink{struct_noeud}{Noeud}} \mbox{\hyperlink{sdd_8h_ae80d9eb3aee3753b2d5a24b616349e35}{Noeud}}
+\begin{DoxyCompactList}\small\item\em a Node of character and her corresponding occurrences. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{sdd_8h_ad866a10003e90a02f099ac6ce9850410}{afficher\+\_\+liste}} (\mbox{\hyperlink{struct_element}{Element}} $\ast$liste)
+\begin{DoxyCompactList}\small\item\em for print the elements of a structure \mbox{\hyperlink{struct_element}{Element}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sdd_8h_af3ee565f801a7219621bf995fe3c2a56}{afficher\+\_\+arbre}} (\mbox{\hyperlink{struct_noeud}{Noeud}} $\ast$arbre)
+\begin{DoxyCompactList}\small\item\em for print the elements of a structure \mbox{\hyperlink{struct_noeud}{Noeud}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sdd_8h_ac82b0956bfab8419168fe3a6d1656be2}{afficher\+\_\+feuille}} (\mbox{\hyperlink{struct_noeud}{Noeud}} $\ast$arbre)
+\begin{DoxyCompactList}\small\item\em for print the leaves of a structure \mbox{\hyperlink{struct_noeud}{Noeud}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+file that contains the corresponding data structures and display functions. 
+
+\begin{DoxyAuthor}{Author}
+Maxime L\+A\+ZE \+: \href{mailto:maxime.laze@efrei.net}{\texttt{ maxime.\+laze@efrei.\+net}} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+December 2020 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{sdd_8h_af3ee565f801a7219621bf995fe3c2a56}\label{sdd_8h_af3ee565f801a7219621bf995fe3c2a56}} 
+\index{sdd.h@{sdd.h}!afficher\_arbre@{afficher\_arbre}}
+\index{afficher\_arbre@{afficher\_arbre}!sdd.h@{sdd.h}}
+\doxysubsubsection{\texorpdfstring{afficher\_arbre()}{afficher\_arbre()}}
+{\footnotesize\ttfamily void afficher\+\_\+arbre (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_noeud}{Noeud}} $\ast$}]{arbre }\end{DoxyParamCaption})}
+
+
+
+for print the elements of a structure \mbox{\hyperlink{struct_noeud}{Noeud}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arbre} & an Huffamn tree. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sdd_8h_ac82b0956bfab8419168fe3a6d1656be2}\label{sdd_8h_ac82b0956bfab8419168fe3a6d1656be2}} 
+\index{sdd.h@{sdd.h}!afficher\_feuille@{afficher\_feuille}}
+\index{afficher\_feuille@{afficher\_feuille}!sdd.h@{sdd.h}}
+\doxysubsubsection{\texorpdfstring{afficher\_feuille()}{afficher\_feuille()}}
+{\footnotesize\ttfamily void afficher\+\_\+feuille (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_noeud}{Noeud}} $\ast$}]{arbre }\end{DoxyParamCaption})}
+
+
+
+for print the leaves of a structure \mbox{\hyperlink{struct_noeud}{Noeud}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arbre} & an Huffamn tree. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sdd_8h_ad866a10003e90a02f099ac6ce9850410}\label{sdd_8h_ad866a10003e90a02f099ac6ce9850410}} 
+\index{sdd.h@{sdd.h}!afficher\_liste@{afficher\_liste}}
+\index{afficher\_liste@{afficher\_liste}!sdd.h@{sdd.h}}
+\doxysubsubsection{\texorpdfstring{afficher\_liste()}{afficher\_liste()}}
+{\footnotesize\ttfamily void afficher\+\_\+liste (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_element}{Element}} $\ast$}]{liste }\end{DoxyParamCaption})}
+
+
+
+for print the elements of a structure \mbox{\hyperlink{struct_element}{Element}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em liste} & the liste of characters and occurrences. \\
+\hline
+\end{DoxyParams}
