@@ -3,8 +3,8 @@ project(Huffman C)
 
 set(CMAKE_C_STANDARD 99)
 
-set(INCLUDES sdd.h headers/1/a.h headers/1/b headers/2/1.h headers/2/2.h headers/2/3.h headers/2/4.h headers/2/5.h headers/3/1.h headers/3/2.h)
-set(SOURCES main.c src/1/b.c src/1/a.c src/2/1.c sdd.c src/2/2.c src/2/3.c src/2/4.c src/2/5.c src/3/1.c src/3/2.c)
+set(SOURCES source/main.c source/Files/compression/naive_compression.c source/Files/decompression/naive_decompression.c source/Files/Dictionary/naive_dictionary.c source/Files/Huffman_tree/Huffman_naive_tree.c source/Files/Huffman_tree/Optimized_huffman_tree.c source/Files/Lettertobit/C_File/conversion.c source/Files/Lettertobit/C_File/file_size.c source/Files/Occurrences/naive_occurrences.c source/Files/Occurrences/Optimized_occurrences.c source/Files/sdd/sdd.c)
+set(INCLUDES source/Files/compression/naive_compression.h source/Files/decompression/naive_decompression.h source/Files/Dictionary/naive_dictionary.h source/Files/Huffman_tree/Huffman_naive_tree.h source/Files/Huffman_tree/Optimized_huffman_tree.h source/Files/Lettertobit/Header/conversion.h source/Files/Lettertobit/Header/file_size.h source/Files/Occurrences/naive_occurrences.h source/Files/Occurrences/Optimized_occurrences.h source/Files/sdd/sdd.h)
 
 add_executable(Huffman ${INCLUDES} ${SOURCES})
 

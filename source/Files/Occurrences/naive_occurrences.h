@@ -8,6 +8,8 @@
 #ifndef HUFFMAN_2_1_H
 #define HUFFMAN_2_1_H
 
+#include "../sdd/sdd.h"
+
 /**
  * \brief Function that adds the character to the list and if the list is null, the function returns the element.
  * \param double pointer to the liste to query.
@@ -33,6 +35,6 @@ int incrementer_occurence(Element *liste, char carac);
  * \return, returns a list of type Element.
  */
 
-Element *occurences(char * nom_fichier);
+Element *occurences(char *nom_fichier);
 
 #endif //HUFFMAN_2_1_H

@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 #include "../sdd/sdd.h"
-#include "../Arbre de Huffman/Arbre de huffman naif.h"
+#include "../Huffman_tree/Huffman_naive_tree.h"
 
 int recherche_dicho(Noeud **noeuds, char carac, int n) {
     int inf = 0, sup = n - 1, mil, pos = -1;
